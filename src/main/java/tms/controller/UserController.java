@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import tms.service.User;
+import tms.models.User;
 import tms.storages.InMemoryUserStorage;
 
 import javax.servlet.http.HttpSession;
@@ -30,7 +30,8 @@ public class UserController {
         httpSession.setAttribute("user", user);
         inMemoryUserStorage.setAuth(user);
         inMemoryUserStorage.save(user);
-        httpSession.setAttribute("messageReg", "You're registered!");
+
+        modelAndView.setViewName("redirect:/user/auth");
         return modelAndView;
 
     }
@@ -57,7 +58,7 @@ public class UserController {
             httpSession.setAttribute("messageW", "Wrong password!");
             modelAndView.setViewName("redirect:/user/auth");
         } else {
-            httpSession.setAttribute("messageAuth2", "You're auth!");
+
             httpSession.setAttribute("user", byLogin);
             inMemoryUserStorage.setAuth(byLogin);
         }

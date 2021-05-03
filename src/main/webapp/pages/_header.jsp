@@ -26,7 +26,7 @@
             <a class="nav-link" href="/user/reg">Registration</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/user/auth">Login</a>
+            <a class="nav-link" href="/user/auth">Authorization</a>
         </li>
     </c:if>
     <li class="nav-item">

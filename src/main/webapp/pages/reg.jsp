@@ -9,16 +9,16 @@
 <form action="/user/reg" method="post">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp">
+        <input required type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp">
         <p style="color: red">${name}</p>
     </div>
     <div class="mb-3">
         <label for="login" class="form-label">Login</label>
-        <input type="text" name="login" class="form-control" id="login" aria-describedby="loginHelp">
+        <input required type="text" name="login"  class="form-control" id="login" aria-describedby="loginHelp">
     </div>
     <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" name="password" class="form-control" id="password">
+        <input required type="password" name="password" class="form-control" id="password">
     </div>
     <div class="mb-3">
         <div class="form-check">

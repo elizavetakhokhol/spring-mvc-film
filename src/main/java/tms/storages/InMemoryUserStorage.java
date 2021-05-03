@@ -3,7 +3,7 @@ package tms.storages;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-import tms.service.User;
+import tms.models.User;
 
 import java.util.ArrayList;
 import java.util.List;

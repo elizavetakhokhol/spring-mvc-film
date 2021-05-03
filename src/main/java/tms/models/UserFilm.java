@@ -1,8 +1,9 @@
-package tms.service;
+package tms.models;
 
 import jakarta.validation.constraints.NotBlank;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 public class UserFilm {

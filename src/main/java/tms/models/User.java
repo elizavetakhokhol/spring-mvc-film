@@ -1,8 +1,9 @@
-package tms.service;
+package tms.models;
 
 import jakarta.validation.constraints.NotBlank;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 public class User {
@@ -11,12 +12,15 @@ public class User {
     private String name;
     @NotNull
     @NotBlank
+    @Size(max = 15, min = 4)
     private String login;
     @NotNull
     @NotBlank
+    @Size(max = 15, min = 4)
     private String password;
     @NotNull
     @NotBlank
+    @Size(max = 15, min = 4)
     private boolean admin;
 
 

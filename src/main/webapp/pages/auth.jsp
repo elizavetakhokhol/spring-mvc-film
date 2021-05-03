@@ -11,11 +11,11 @@
         <form action="/user/auth" class="w-25" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail2" class="form-label">Login</label>
-                <input type="text" name="login" class="form-control" id="exampleInputEmail2" aria-describedby="loginlHelp">
+                <input required type="text" name="login" class="form-control" id="exampleInputEmail2" aria-describedby="loginlHelp">
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                <input required type="password" name="password" class="form-control" id="exampleInputPassword1">
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
